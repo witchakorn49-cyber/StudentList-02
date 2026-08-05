@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List — Week 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student List</h1>
+    <p class="subtitle">801201 | Week 3 | List + JavaScript</p>
+
+    <!-- ฟอร์มรับข้อมูล -->
+    <div class="input-group">
+      <input type="text"  id="nameInput" placeholder="ชื่อนักศึกษา">
+      <input type="number" id="gpaInput" placeholder="GPA" step="0.01" min="0" max="4.00">
+      <button onclick="addStudent()">เพิ่ม</button>
+    </div>
+
+    <!-- แสดงจำนวนนักศึกษา (TODO 5) -->
+    <p class="count-display">
+      จำนวนนักศึกษา: <span id="countDisplay">0</span> คน
+    </p>
+
+    <!-- แสดงรายชื่อ (TODO 6) -->
+    <div id="studentList" class="student-list">
+      <!-- renderList() จะสร้าง student-item แต่ละคนไว้ตรงนี้ -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
